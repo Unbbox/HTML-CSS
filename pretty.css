@@ -1,3 +1,12 @@
+.main {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.main > a {
+  font-weight: bolder;
+}
+
 h4 {
   color: #6e5ece;
 }
