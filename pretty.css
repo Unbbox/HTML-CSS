@@ -1,32 +1,13 @@
-.main {
-  margin-top: 50px;
+body {
+  margin-left: 50px;
+}
+.main > div {
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
 }
-.main > a {
+.main > div > a {
+  text-decoration: underline;
+  color: black;
   font-weight: bolder;
-}
-
-h4 {
-  color: #6e5ece;
-}
-
-span {
-  font-weight: bold;
-}
-
-div.example {
-  width: 300px;
-  height: 100px;
-  background-color: beige;
-  border: 1px solid black;
-  border-radius: 5px;
-}
-
-.tag {
-  margin-bottom: 100px;
-}
-
-u {
-  text-decoration: red wavy underline;
 }
