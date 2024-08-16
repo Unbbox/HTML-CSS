@@ -1,3 +1,7 @@
+body {
+  margin-top: 100px;
+  margin-left: 100px;
+}
 h4 {
   color: #6e5ece;
 }
@@ -20,4 +24,11 @@ div.example {
 
 u {
   text-decoration: red wavy underline;
+}
+
+i {
+  color: lightseagreen;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.9em;
 }
