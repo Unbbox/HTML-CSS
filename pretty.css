@@ -26,3 +26,7 @@ div.example {
 .tag {
   margin-bottom: 100px;
 }
+
+u {
+  text-decoration: red wavy underline;
+}
