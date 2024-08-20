@@ -32,3 +32,51 @@ i {
   font-weight: bold;
   font-size: 0.9em;
 }
+
+/* 01_04 CSS */
+.tag_ul,
+.tag_ol {
+  width: 500px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.tag_ol {
+  display: flex;
+}
+
+.tag_ol > section {
+  width: 50%;
+}
+
+.radios,
+.btns_start_num {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: grey;
+}
+
+.controls {
+  background-color: #f8f8f8;
+}
+
+.controls > div {
+  width: 90%;
+  box-sizing: border-box;
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: relative;
+}
+.controls > div > h4 {
+  position: absolute;
+  top: -35px;
+  left: 10px;
+  padding: 5px;
+  background-color: #f8f8f8;
+}
+/* 01_04 CSS END */
