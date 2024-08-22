@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>사용자로부터 입력 받기 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="" method="get" autocomplete="off">
+      <label for="my_name">이름</label>
+      <input type="text" id="my_name" />
+      <br />
+      <br />
+      <label for="my_age">나이</label>
+      <input type="number" id="my_age" />
+      <br />
+      <br />
+      <input type="submit" value="제출" />
+      <input type="reset" value="초기화" />
+    </form>
+
+    <form action="">
+      <h2>폼 안의 요소들 그룹으로 묶기</h2>
+      <fieldset>
+        <legend>반장</legend>
+        <label for="name_1">이름</label>
+        <input type="text" name="name_1" id="name_1" /> <br />
+        <br />
+        <label for="age">나이</label>
+        <input type="number" name="age_1" id="age_" />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>부반장</legend>
+        <label for="name_2">이름</label>
+        <input type="text" name="name_2" id="name_2" /> <br />
+        <br />
+        <label for="age">나이</label>
+        <input type="number" name="age_2" id="age_2" />
+      </fieldset>
+      <br />
+      <fieldset form="classForm" disabled>
+        <legend>서기</legend>
+        <label for="name_3">이름</label>
+        <input type="text" name="name_3" id="name_3" /> <br />
+        <br />
+        <label for="age">나이</label>
+        <input type="number" name="age_3" id="age_3" />
+      </fieldset>
+    </form>
+  </body>
+</html>

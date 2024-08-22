@@ -80,3 +80,64 @@ label {
   background-color: #f8f8f8;
 }
 /* 01_04 CSS END */
+
+/* 01_06 CSS */
+table {
+  margin-bottom: 50px;
+}
+/* 01_06 CSS END */
+
+/* 01_07 CSS */
+.result {
+  width: 600px;
+  display: flex;
+}
+
+.result > div {
+  width: 50%;
+}
+
+.a_tag {
+  background-color: #f8f8f8;
+}
+
+.a_tag > div {
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #f8f8f8;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  position: relative;
+}
+
+.a_tag > div > h4 {
+  background-color: #f8f8f8;
+  position: absolute;
+  top: -35px;
+  left: 10px;
+  padding: 5px;
+}
+
+.id_aLink > div {
+  width: 300px;
+}
+
+.id_aLink,
+.href_div_sub {
+  display: flex;
+}
+
+.href_div {
+  background-color: #f8f8f8;
+}
+
+.href_div_sub {
+  flex-direction: column;
+}
+
+.result_target {
+  height: 300px;
+  overflow: auto;
+}
+
+/* 01_07 CSS END */
