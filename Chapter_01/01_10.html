@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>사용자로부터 입력 받기 3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="txt_area">
+      <h2>textarea 태그</h2>
+      <label for="txtArea">메세지를 입력하세요.</label> <br />
+      <textarea name="txtArea" id="txtArea" cols="30" rows="10"></textarea>
+      <br /><br />
+    </section>
+
+    <section class="opt_tag">
+      <h2>옵션들을 사용하는 태그</h2>
+      <div>
+        <h4>select, option 태그</h4>
+        <label for="lang">언어</label> <br />
+        <select name="lang" id="lang">
+          <option value="">--언어선택--</option>
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="js">자바스크립트</option>
+          <option value="ts">타입스크립트</option>
+        </select>
+      </div>
+
+      <br /><br />
+
+      <div>
+        <h4>optgroup 태그</h4>
+        <select name="" id="">
+          <optgroup label="과일">
+            <option value="f_apl">사과</option>
+            <option value="f_grp">포도</option>
+            <option value="f_org">오렌지</option>
+          </optgroup>
+          <optgroup label="채소">
+            <option value="v_crt">당근</option>
+            <option value="v_tmt">토마토</option>
+            <option value="v_ept">가지</option>
+          </optgroup>
+          <optgroup label="육류">
+            <option value="m_bef">소고기</option>
+            <option value="m_prk">돼지고기</option>
+            <option value="m_ckn">닭고기</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <br /><br />
+
+      <div>
+        <h4>datalist 태그</h4>
+        <label for="job">현재 직업</label><br />
+        <input id="job" list="jobs" />
+        <datalist id="jobs">
+          <option value="학생"></option>
+          <option value="디자이너"></option>
+          <option value="퍼블리셔"></option>
+          <option value="개발자"></option>
+        </datalist>
+      </div>
+
+      <br /><br />
+    </section>
+
+    <section class="deg_tag">
+      <h2>정도를 표현하는 태그</h2>
+      <h4>progress 태그</h4>
+      <progress id="progressBar" max="100" 0%></progress>
+      <button id="prgStartBtn" type="button">시작</button>
+      <br /><br />
+      <h4>meter 태그</h4>
+      <meter min="0" max="100" low="33" high="67" optimum="50" value="20">20달러</meter>
+      <meter min="0" max="100" low="33" high="67" optimum="50" value="50">50달러</meter>
+      <meter min="0" max="100" low="33" high="67" optimum="50" value="80">80달러</meter> <br />
+
+      <meter min="0" max="100" low="33" high="67" optimum="10" value="20">20달러</meter>
+      <meter min="0" max="100" low="33" high="67" optimum="10" value="50">50달러</meter>
+      <meter min="0" max="100" low="33" high="67" optimum="10" value="80">80달러</meter> <br />
+
+      <meter min="0" max="100" low="33" high="67" optimum="90" value="20">20달러</meter>
+      <meter min="0" max="100" low="33" high="67" optimum="90" value="50">50달러</meter>
+      <meter min="0" max="100" low="33" high="67" optimum="90" value="80">80달러</meter> <br />
+      <br /><br />
+    </section>
+
+    <script src="01_10.js"></script>
+  </body>
+</html>

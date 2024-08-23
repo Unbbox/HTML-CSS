@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>사용자로부터 입력 받기 2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>인풋 태그</h1>
+    <br />
+    <section class="txt_input">
+      <h2>텍스트 관련 인풋 타입</h2>
+      <form action="#">
+        <label for="txt">text</label> <br />
+        <input type="text" name="txt" id="txt" placeholder="5자 이하" maxlength="5" />
+        <br /><br />
+        <label for="pwd">password</label> <br />
+        <input type="password" name="pwd" id="pwd" placeholder="4자 이상" minlength="4" />
+        <br /><br />
+        <label for="search">search</label> <br />
+        <input type="search" name="search" id="search" />
+        <br /><br />
+        <label for="tele">tel</label> <br />
+        <input type="tel" name="tele" id="tele" />
+        <br /><br />
+        <button type="submit">제출</button>
+        <br /><br />
+      </form>
+    </section>
+
+    <section class="num_input">
+      <h2>숫자 관련 인풋 타입</h2>
+      <label for="num">number</label><br />
+      <input type="number" name="num" id="num" />
+      <br /><br />
+      <label for="rng">range</label><br />
+      <input type="range" name="rng" id="rng" min="0" max="100" step="10" />
+      <br /><br />
+      <label for="dt">date</label><br />
+      <input type="date" name="dt" id="dt" />
+      <br /><br />
+    </section>
+
+    <section class="chk_input">
+      <h2>체크 관련 인풋 타입</h2>
+      <h4>checkbox</h4>
+      <input type="checkbox" name="cbIp" id="cbIp" />
+      <label for="cbIp">유기농 </label>
+      <br /><br />
+
+      <h4>radio</h4>
+      <input type="radio" name="fruit" id="f_apple" checked />
+      <label for="f_apple">사과</label>
+
+      <input type="radio" name="fruit" id="f_grape" />
+      <label for="f_grape">포도</label>
+
+      <input type="radio" name="fruit" id="f_orange" />
+      <label for="f_orange">오렌지</label><br />
+
+      <input type="radio" name="vege" id="v_carrot" checked />
+      <label for="v_carrot">당근</label>
+
+      <input type="radio" name="vege" id="v_tomato" />
+      <label for="v_tomato">토마토</label>
+
+      <input type="radio" name="vege" id="v_ept" />
+      <label for="v_ept">가지</label><br />
+      <br /><br />
+    </section>
+
+    <section class="etc_input">
+      <h2>기타 인풋 타입</h2>
+      <form action="">
+        <label for="fileIp">file</label><br />
+        <input type="file" name="fileIp" id="fileIp" accept="image/png, image/jpeg" multiple />
+        <br /><br />
+        <label for="">hidden</label><br />
+        <input type="hidden" name="" id="" />
+        <br /><br />
+        <hr />
+        <label for="">email</label> <br />
+        <input type="email" name="" id="" /> <br />
+        <br />
+        <button type="submit">제출</button> <br /><br />
+      </form>
+    </section>
+
+    <section class="common_input">
+      <h2>인풋 요소 공동(대부분) 속성</h2>
+      <form action="">
+        <label for="val">value</label><br />
+        <input type="text" name="val" id="val" value="지정됨" />
+        <br /><br />
+        <label for="af">autofocus</label><br />
+        <input type="text" name="af" id="af" placeholder="자동 포커스됨" autofocus />
+        <br /><br />
+        <label for="ro">readonly</label><br />
+        <input type="text" name="ro" id="ro" value="읽기만 가능, 전송됨" readonly />
+        <br /><br />
+        <label for="req">required</label><br />
+        <input type="text" name="req" id="req" placeholder="필수입력!" required />
+        <br /><br />
+        <label for="dis">disabled</label><br />
+        <input type="disabled" name="dis" id="dis" placeholder="입력불가, 전송 안됨" disabled />
+        <br /><br />
+        <input type="radio" name="fruits" id="" checked />
+        <label for="">사과</label>
+        <input type="radio" name="fruits" id="" />
+        <label for="">포도</label>
+        <input type="radio" name="fruits" id="" disabled />
+        <label for="">오렌지(품절)</label>
+        <br /><br /><br />
+        <button type="submit">제출</button>
+        <br /><br />
+      </form>
+    </section>
+  </body>
+</html>
