@@ -28,3 +28,18 @@ const tIndent = document.querySelector("#tIndent");
 tIndent.addEventListener("change", (e) => {
   indent.style.textIndent = e.target.value;
 });
+
+// listStyle JS
+const listStyle = document.querySelector(".listStyle > div");
+const ul = document.querySelector("#ulStyle");
+const ol = document.querySelector("#olStyle");
+
+ul.addEventListener("change", (e) => {
+  listStyle.querySelector("ul").style.listStyle = e.target.value;
+  listStyle.querySelector("ol").style.listStyle = ol.value;
+})
+
+ol.addEventListener("change", (e) => {
+  listStyle.querySelector("ol").style.listStyle = e.target.value;
+})
+

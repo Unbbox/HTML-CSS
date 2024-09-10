@@ -20,8 +20,9 @@ label {
   margin-top: 50px;
 }
 
-input {
-  height: 20px;
+input,
+select {
+  height: 30px;
   margin-bottom: 10px;
 }
 
@@ -29,14 +30,16 @@ input {
   background-color: #f8f8f8;
 }
 
+
 .control > div {
   top: 30px;
-  width: 270px;
+  width: 70%;
   border: 1px solid lightgrey;
   border-radius: 10px;
   margin: auto;
   padding: 15px;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .control > div > h4 {

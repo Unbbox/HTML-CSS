@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>색 표현하기</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="02_04.css">
+</head>
+<body>
+    <section class="color">
+        <div>
+            <h2>색상 표현하기</h2>
+            <p>CSS에서는 아래의 형식들을 사용하여 색상을 지정할 수 있습니다.</p>
+            <ul>
+                <li id="keyword">
+                    Keyword
+                    <div>
+                        <div></div>
+                    </div>
+                </li>
+
+                <li id="rgb">
+                    RGB(A)
+                    <div>
+                        <div></div>
+                    </div>
+                </li>
+
+                <li id="hex">
+                    HEX
+                    <div>
+                        <div></div>
+                    </div>
+                </li>
+
+                <li id="hsl">
+                    HSL
+                    <div>
+                        <div></div>
+                    </div>
+                </li>
+            </ul>
+            <p>
+                <em>keyword</em>는 색상마다 부여된 이름으로 <a href="https://developer.mozilla.org/ko/docs/Web/CSS/color_value#%EC%83%89%EC%83%81_%ED%82%A4%EC%9B%8C%EB%93%9C" target="_blank">이 링크에서</a> 목록을 확인할 수 있습니다. 
+                <br><br>
+                <em>RGB(A)</em>는 빨강, 초록, 파랑의 광원으로 색을 혼합하는 방식이며 <br>
+                끝에 알파값을 붙여서 투명도를 조절할 수 있죠. 
+                <br><br>
+                <em>HEX</em>는 R, G, B, Alpha 값들을 16진수형태로 나타낸 것입니다. 
+                <br><br>
+                <em>HSL(A)</em>은 색상, 채도, 명도값 그리고 알파값을 조합하여 색을 나타냅니다.
+            </p>
+        </div>
+
+        <div class="control">
+            <div>
+                <h4>Keyword</h4>
+                <label for="keywordBG">background-color</label> <br>
+                <select name="keywordBG" id="keywordBG">
+                    <option value="white">white</option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="red">red</option>
+                    <option value="yellow">yellow</option>
+                    <option value="green">green</option>
+                    <option value="purple">purple</option>
+                    <option value="darkorange">darkorange</option>
+                    <option value="deeppink">deeppink</option>
+                    <option value="indigo">indigo</option>
+                    <option value="coral">coral</option>
+                    <option value="lavender">lavender</option>
+                    <option value="wheat">wheat</option>
+                    <option value="transparent">transparent</option>
+                </select>
+            </div>
+            <div>
+                <h4>RGB(A)</h4>
+                <label for="rgbBG">background-color</label> <br>
+                <select name="rgbBG" id="rgbBG">
+                    <option value="rgb(255, 255, 255)">rgb(255, 255, 255)</option>
+                    <option value="rgb(0, 0, 0)">rgb(0, 0, 0)</option>
+                    <option value="rgb(100%, 0%, 0%)">rgb(100%, 0%, 0%)</option>
+                    <option value="rgb(0%, 100%, 0%)">rgb(0%, 100%, 0%)</option>
+                    <option value="rgb(0%, 50%, 0%)">rgb(0%, 50%, 0%)</option>
+                    <option value="rgb(25%, 0%, 100%)">rgb(25%, 0%, 100%)</option>
+                    <option value="rgb(50, 50, 50)">rgb(50, 50, 50)</option>
+                    <option value="rgb(200, 200, 200)">rgb(200, 200, 200)</option>
+                    <option value="rgb(255, 140, 0)">rgb(255, 140, 0)</option>
+                    <option value="rgb(173, 255, 47)">rgb(173, 255, 47)</option>
+                    <option value="rgba(0, 0, 0, 0.25)">rgba(0, 0, 0, 0.25)</option>
+                    <option value="rgba(100%, 0%, 0%, 50%)">rgba(100%, 0%, 0%, 50%)</option>
+                    <option value="rgba(255, 140, 0, 0.1)">rgba(255, 140, 0, 0.1)</option>
+                </select>
+            </div>
+            <div>
+                <h4>HEX</h4>
+                <label for="hexBG">background-color</label> <br>
+                <select name="hexBG" id="hexBG">
+                    <option value="#FFFFFF">#FFFFFF</option>
+                    <option value="#000000">#000000</option>
+                    <option value="#FF0000">#FF0000</option>
+                    <option value="#555555">#555555</option>
+                    <option value="#555">#555</option>
+                    <option value="#050505">#050505</option>
+                    <option value="#dddddd">#dddddd</option>
+                    <option value="#ddd">#ddd</option>
+                    <option value="#0000FF80">#0000FF80</option>
+                    <option value="#00000000">#00000000</option>
+                </select>
+            </div>
+            <div>
+                <h4>HSL(A)</h4>
+                <label for="hslBG">background-color</label> <br>
+                <select name="hslBG" id="hslBG">
+                    <option value="hsl(0, 100%, 100%)">hsl(0, 100%, 100%)</option>
+                    <option value="hsl(0, 100%, 50%)">hsl(0, 100%, 50%)</option>
+                    <option value="hsl(0, 100%, 0%)">hsl(0, 100%, 0%)</option>
+                    <option value="hsl(0, 50%, 50%)">hsl(0, 50%, 50%)</option>
+                    <option value="hsl(0, 0%, 50%)">hsl(0, 0%, 50%)</option>
+                    <option value="hsl(60, 100%, 50%)">hsl(60, 100%, 50%)</option>
+                    <option value="hsl(120, 100%, 50%)">hsl(120, 100%, 50%)</option>
+                    <option value="hsl(180, 100%, 50%)">hsl(180, 100%, 50%)</option>
+                    <option value="hsl(240, 100%, 50%)">hsl(240, 100%, 50%)</option>
+                    <option value="hsl(300, 100%, 50%)">hsl(300, 100%, 50%)</option>
+                    <option value="hsl(360, 100%, 50%)">hsl(360, 100%, 50%)</option>
+                    <option value="hsla(360, 100%, 50%, 0.5)">hsla(360, 100%, 50%, 0.5)</option>
+                    <option value="hsla(360, 100%, 50%, 0)">hsla(360, 100%, 50%, 0)</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <script src="02_04.js"></script>
+</body>
+</html>

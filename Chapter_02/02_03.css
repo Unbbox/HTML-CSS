@@ -3,3 +3,18 @@
 .listStyle {
   display: flex;
 }
+
+.align > div.control {
+  height: 300px;
+  width: 330px;
+}
+
+.align > .control > div {
+  width: 270px;
+}
+
+.align > div,
+.indent > div,
+.listStyle > div {
+  min-width: 300px;
+}
