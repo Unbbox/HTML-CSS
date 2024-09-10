@@ -1,0 +1,54 @@
+section {
+  margin: 100px;
+}
+
+section > div:not(:last-child) {
+  margin-right: 50px;
+}
+
+em {
+  color: #f0506e;
+}
+
+h4 {
+  color: #6e5ece;
+}
+
+label {
+  color: grey;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+input {
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.control {
+  background-color: #f8f8f8;
+}
+
+.control > div {
+  top: 30px;
+  width: 270px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  margin: auto;
+  padding: 15px;
+  position: relative;
+}
+
+.control > div > h4 {
+  background-color: #f8f8f8;
+  padding: 5px;
+  position: absolute;
+  top: -37px;
+}
+
+/* input:number 오른쪽 화살표 없애기 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

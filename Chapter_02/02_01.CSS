@@ -22,7 +22,8 @@ section {
 /* class 선택자 */
 /* 태그보다 우선순위 높음 */
 /* 페이지상의 여러 요소가 같은 class를 가질 수 있음 */
-.blue, span.blue {
+.blue,
+span.blue {
   color: lightblue;
 }
 
@@ -37,8 +38,8 @@ p.blue {
 }
 
 /* 위의 것보다 구체적이기 때문에 이 CSS 적용 */
-p.blue.dark { 
-  color:darkblue;
+p.blue.dark {
+  color: darkblue;
 }
 
 /* id 선택자 */
@@ -49,7 +50,9 @@ p.blue.dark {
 }
 
 /* 그룹 선택자( , 로 구분) */
-span, .dark, #red {
+span,
+.dark,
+#red {
   text-decoration: underline;
 }
 
@@ -103,5 +106,5 @@ ol li:nth-child(3) {
 li:hover,
 ol li:nth-child(3):hover {
   font-weight: bold;
-  color:blue;
+  color: blue;
 }

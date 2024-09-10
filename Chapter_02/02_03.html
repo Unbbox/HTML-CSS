@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>문단과 목록 스타일</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="02_03.css" />
+  </head>
+  <body>
+    <section class="align">
+      <div>
+        <h2>정렬과 간격</h2>
+        <p>
+          <strong>text-align</strong> 속성은 텍스트의 정렬 방식을 지정합니다. 직관적으로 알 수 있듯, 기본값인 <em>left</em>는 왼쪽, <em>center</em>는
+          가운데, <em>right</em>은 오른쪽으로 텍스트(및 인라인 요소들)을 정렬하죠. <em>justify</em>는 왼쪽으로 정렬하면서, 텍스트가 여러 줄이 될 때
+          마지막 줄을 제외한 줄들의 오른쪽이 나란히 되도록 각 줄의 공간을 조절합니다. <br /><br />
+          <strong>letter-spacing</strong>으로는 자간, <strong>word-spacing</strong>으로는 단어 간격, <strong>line-height</strong>으로는 줄 높이를
+          조절할 수 있습니다.
+        </p>
+      </div>
+
+      <div class="control">
+        <div>
+          <h4>div 요소</h4>
+          <label for="tAlign">text-align</label> <br />
+          <input type="radio" name="tAlign" id="left" value="left" checked /> left <input type="radio" name="tAlign" id="right" value="right" /> right
+          <input type="radio" name="tAlign" id="center" value="center" /> center
+          <input type="radio" name="tAlign" id="justify" value="justify" /> justify <label for="lSpace">letter-spacing</label> <br />
+          <input type="text" name="lSpace" id="lSpace" value="0px" /> <br />
+          <label for="wSpace">word-spacing</label> <br />
+          <input type="text" name="wSpace" id="wSpace" value="0px" /> <br />
+          <label for="lHeight">line-height</label> <br />
+          <input type="text" name="lHeight" id="lHeight" value="1.5em" />
+        </div>
+      </div>
+    </section>
+
+    <section class="indent">
+      <div>
+        <h2>들여쓰기</h2>
+        <p>
+          <strong>text-indent</strong> 속성으로는 들여쓰기를 조절할 수 있습니다. 값으로 입력한 수치만큼 첫 줄이 안쪽으로 들어가죠. 글자크기와 같이 px,
+          %, em 등의 단위들을 사용할 수 있고, 음수를 넣어서 내어쓰기를 할 수도 있습니다.
+        </p>
+      </div>
+
+      <div class="control">
+        <div>
+          <h4>div 요소</h4>
+          <label for="tIndent">text-indent</label> <br />
+          <input type="text" name="tIndent" id="tIndent" value="0px" />
+        </div>
+      </div>
+    </section>
+
+    <section class="listStyle">
+      <div>
+        <ul>
+          <li>저스티스 리그</li>
+          <li>어벤져스</li>
+          <li>
+            엑스맨
+            <ol>
+              <li>퍼스트 클래스</li>
+              <li>데이즈 오브 퓨쳐 패스트</li>
+              <li>아포칼립스</li>
+              <li>다크피닉스</li>
+            </ol>
+          </li>
+        </ul>
+        <p>
+          <strong>list-style</strong> 속성으로 ul과 ol 목록의 불릿, 숫자 스타일을 지정할 수 있습니다. <br />
+          ul, ol 여부와 관계없이 기호, 서수, 원하는 문자, 이모지, 심지어 이미지까지 사용할 수 있죠. <br /><br />
+
+          <em>none</em> 값을 사용하여 아무것도 붙이지 않을 수도 있습니다. <br /><br />
+
+          👉 MDN에서 더 자세한 설정 방법 보기
+        </p>
+      </div>
+
+      <div class="control">
+        <div>
+          <h4>ul 요소</h4>
+          <label for="ulStyle">list-style</label>
+          <select name="ulStyle" id="ulStyle">
+            <option value="">disc</option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+        </div>
+        <div>
+          <h4>ol 요소</h4>
+          <label for="olStyle">list-style</label>
+          <select name="olStyle" id="olStyle">
+            <option value="">demical</option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <script src="02_03.js"></script>
+  </body>
+</html>
