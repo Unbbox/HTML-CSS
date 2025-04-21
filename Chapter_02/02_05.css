@@ -1,0 +1,34 @@
+.display {
+  display: flex;
+}
+
+.display_element {
+  min-width: 400px;
+}
+
+.display_element span,
+.display_element div {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.display_element span {
+  background-color: slateblue;
+}
+
+.display_element span:nth-child(even) {
+  background-color: rgba(106, 90, 205, 0.85);
+}
+
+.display_element div {
+  background-color: tomato;
+}
+
+.display_element div:nth-child(even) {
+  background-color: rgba(255, 99, 71, 0.85);
+}
+
+.control {
+  width: 400px;
+  height: 650px;
+}

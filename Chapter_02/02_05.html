@@ -1,28 +1,114 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>인라인 요소와 블록 요소</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="02_05.css">
-</head>
-<body>
-    <section>
-        <div>
-            <strong>블록 요소</strong>는 딱딱한 상자와도 같습니다. <br>
-            이 파란색 상자처럼 사각형의 형태를 갖고 있으며 너비와 높이, 안팎의 간격을 부여받을 수 있죠.
-        </div>
 
-        <br>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="02_05.css" />
 
-        <p>
-            반면 <strong>인라인 요소</strong>는 비닐이나 랩 안에 내용물을 넣은 것과도 같습니다. 
-            <span>이 텍스트처럼, 일정한 바깥 형태나 껍데기 없이 페이지의 흐름에 따라</span>
-            다른 텍스트나 컨텐츠와 어우러져 배치되죠. 위의 노란 부분이 인라인 요소입니다.
-        </p>
+    <style>
+      body {
+        font-size: 1.24em;
+      }
+      .example div {
+        padding: 24px;
+        box-sizing: border-box;
+        background-color: skyblue;
+        width: 24em;
+      }
+      .example p {
+        width: 24em;
+      }
+      .example span {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="example">
+      <div>
+        <strong>블록 요소</strong>는 딱딱한 상자와도 같습니다. <br />
+        이 파란색 상자처럼 사각형의 형태를 갖고 있으며 너비와 높이, 안팎의 간격을 부여받을 수 있죠.
+      </div>
+
+      <br />
+
+      <p>
+        반면 <strong>인라인 요소</strong>는 비닐이나 랩 안에 내용물을 넣은 것과도 같습니다.
+        <span>이 텍스트처럼, 일정한 바깥 형태나 껍데기 없이 페이지의 흐름에 따라</span>
+        다른 텍스트나 컨텐츠와 어우러져 배치되죠. 위의 노란 부분이 인라인 요소입니다.
+      </p>
     </section>
 
+    <hr />
+
+    <section class="display">
+      <div class="display_element">
+        <span>span 요소</span>
+
+        <div>div요소</div>
+
+        <span>span 요소</span>
+        <span>span 요소</span>
+
+        <div>div 요소</div>
+        <div>div 요소</div>
+
+        <span>span 요소</span>
+        <span>span 요소</span>
+        <span>span 요소</span>
+
+        <div>div 요소</div>
+        <div>div 요소</div>
+        <div>div 요소</div>
+        <br />
+
+        텍스트 사이에 들어있는 <span>span 요소</span>입니다. <br /><br />
+
+        <div>div 요소 안에 들어있는 <span>span 요소</span> 입니다.</div>
+        <br />
+
+        <span>
+          span 요소 안에 들어있는
+          <div>div 요소</div>
+          입니다.
+        </span>
+      </div>
+
+      <div class="control">
+        <div>
+          <h4>span 요소</h4>
+          <label for="spanDis">display</label> <br />
+          <input type="radio" name="spanDis" id="inline" value="inline" checked /><span>inline</span>
+          <input type="radio" name="spanDis" id="block" value="block" /><span>block</span>
+          <input type="radio" name="spanDis" id="inline-block" value="inline-block" /><span>inline-block</span>
+        </div>
+
+        <div>
+          <h4>div 요소</h4>
+          <label for="divDis">display</label> <br />
+          <input type="radio" name="divDis" id="block" value="block" checked /><span>block</span>
+          <input type="radio" name="divDis" id="inline" value="inline" /><span>inline</span>
+          <input type="radio" name="divDis" id="inline-block" value="inline-block" /><span>inline-block</span>
+        </div>
+
+        <div>
+          <h4>span과 div 요소</h4>
+          <label for="width">width</label><br />
+          <input type="text" name="width" id="width" /> <br />
+          <label for="height">height</label><br />
+          <input type="text" name="height" id="height" /> <br />
+          <label for="margin">margin</label><br />
+          <input type="text" name="margin" id="margin" value="0" /><br />
+          <label for="padding">padding</label><br />
+          <input type="text" name="padding" id="padding" value="0" /><br />
+        </div>
+      </div>
+    </section>
+
+    <hr />
     <script src="02_05.js"></script>
-</body>
+  </body>
 </html>

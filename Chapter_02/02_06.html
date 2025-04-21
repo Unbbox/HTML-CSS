@@ -1,17 +1,199 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="">
-</head>
-<body>
-    <section>
-        <div></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>박스 모델1</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="02_06.css" />
+  </head>
+  <body>
+    <section class="ele_size">
+      <div>
+        <div>
+          <h2>요소의 크기</h2>
+          <p>
+            inline이 아닌 요소는 <strong>width</strong>와 <strong>height</strong>로 크기를 조절할 수 있습니다.
+
+            <br /><br />
+
+            단위로는 부모의 길이에 상대적인 <em>%</em>를 사용할 수도 있고 <br />
+            뷰포트<i>(viewport)</i> 너비와 높이의 1/100 단위인 <em>vw</em>와 <em>vh</em>, <br />
+            이들 중 큰 것과 작은 것의 1/100 단위인 <em>vmax</em>와 <em>vmin</em>도 유용하게 사용됩니다.
+
+            <br /><br />
+
+            텍스트가 한 줄일 경우 <strong>height</strong>과 <strong>line-height</strong>을 똑같이 맞춰주면 <br />
+            세로 방향에서 가운데로 정렬한 것과 같은 모습이 됩니다.
+
+            <br /><br />
+
+            <em>calc(100% - 50px)</em>과 같은 형식으로 연산자를 사용하여 <br />
+            필요에 맞는 길이로 조절할 수도 있습니다.
+          </p>
+        </div>
+        <div class="div_ele">div 요소</div>
+      </div>
+
+      <div class="control">
+        <div>
+          <h4>div 요소</h4>
+          <label for="width">width</label> <br />
+          <input type="text" name="width" id="width" value="300px" /> <br />
+          <label for="height">height</label> <br />
+          <input type="text" name="height" id="height" value="160px" /> <br />
+          <label for="line-height">line-height</label> <br />
+          <input type="text" name="line-height" id="line-height" value="2em" />
+        </div>
+        <div>
+          <h4>div 위쪽 요소</h4>
+          <label for="display">display</label> <br />
+          <input type="radio" name="display" id="display" value="block" checked /> block
+          <input type="radio" name="display" id="display" value="none" /> none
+        </div>
+      </div>
     </section>
 
-    <script src=""></script>
-</body>
+    <hr />
+
+    <section class="minMaxwidthHeight">
+      <div>
+        <h2>최대/최소 너비/높이 속성</h2>
+        ㆍmax-width / max-height <br />
+        ㆍmix-width / mix-height <br /><br />
+
+        <div class="div_color">
+          <div class="div_yellow">
+            <div class="div_blue">
+              바깥의 노란색 div는 블록인 요소임에도 불구하고 <br />
+              max-width의 값 이상으로 너비가 커지지 않습니다. <br /><br />
+
+              그리고 그 바깥의 회색 박스의 크기를 줄여보아도 <br />
+              min-width의 값보다 너비가 줄어들지 않죠. <br />
+
+              <hr />
+
+              이 남색 div의 display를 토글해보세요 <br /><br />
+
+              바깥의 노란색 div는 이 div가 감춰져도 <br />
+              min-height 속성에 지정된 최소 높이를 갖습니다. <br /><br />
+
+              반대로, 이 div가 숨겨지지 않은 상태에서도 <br />
+              노란색 div는 max-height에 지정된<br />
+              최대 높이보다 높이가 커지지 않는 것을 볼 수 있죠.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="control">
+        <div>
+          <h4>회색 div</h4>
+          <label for="color_width">width</label>
+          <input type="text" name="color_width" id="color_width" value="640px" />
+        </div>
+        <div>
+          <h4>노란색 div</h4>
+          <label for="yellow_maxWidth">max-width</label> <br />
+          <input type="text" name="yellow_maxWidth" id="yellow_maxWidth" value="500px" /><br />
+          <label for="yellow_minWidth">min-width</label><br />
+          <input type="text" name="yellow_minWidth" id="yellow_minWidth" value="400px" /><br />
+          <label for="yellow_maxHeight">max-height</label><br />
+          <input type="text" name="yellow_maxHeight" id="yellow_maxHeight" value="300px" /><br />
+          <label for="yellow_minHeight">min-height</label><br />
+          <input type="text" name="yellow_minHeight" id="yellow_minHeight" value="200px" /><br />
+        </div>
+        <div>
+          <h4>남색 div</h4>
+          <label for="blue_width">display</label><br />
+          <input type="radio" name="blue_width" id="blue_width" value="block" checked /> block
+          <input type="radio" name="blue_width" id="blue_width" value="none" /> none
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="div_contents">
+      <div class="wrapper">
+        컨텐츠만큼만 차지하는 부모 요소
+        <div class="outer">
+          <div class="div1">
+            <h1>div 요소 1</h1>
+            <p>
+              <i>margin</i>과 <i>padding</i>에는 아래 형식 중 하나로 값을 줄 수 있습니다. <br />
+              <ul>
+                <li>공통</li>
+                <li>세로 가로</li>
+                <li>위 오른쪽 아래 왼쪽</li>
+                <li>위 가로 아래</li>
+              </ul>
+            </p>
+            <p>
+              블록 요소의 위, 아래 <i>margin</i>은 전후 블록 요소의 것과 상쇄됩니다.
+            </p>
+          </div>
+          <div class="div2">
+            <h1>div 요소 2</h1>
+            <p>
+              <i>display</i>를 <em>none</em>으로 하면 화면에서 사라집니다. <br />
+              보이지만 않는 것이 아니라 공간도 차지하지 않게 되죠.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="control">
+        <div>
+          <h4>div 요소 1</h4>
+          <label for="div1_margin">margin</label> <br />
+          <select name="div1_margin" id="div1_margin">
+            <option value="24px">24px</option>
+            <option value="4em">4em</option>
+            <option value="0">0</option>
+            <option value="6vh 4vw">6vh 4vw</option>
+            <option value="12px 24px 48px 96px">12px 24px 48px 96px</option>
+            <option value="12px 24px 48px">12px 24px 48px</option>
+          </select>
+          <br />
+
+          <h4>div 요소 1</h4>
+          <label for="div1_padding">padding</label> <br />
+          <select name="div1_padding" id="div1_padding">
+            <option value="16px">16px</option>
+            <option value="4.8vmin">4.8vmin</option>
+            <option value="0">0</option>
+            <option value="0 4em">0 4em</option>
+            <option value="1em 2em 3em 4em">1em 2em 3em 4em</option>
+            <option value="4em 2em 0">4em 2em 0</option>
+          </select>
+          <br />
+        </div>
+
+        <div>
+          <h4>div 요소 2</h4>
+          <label for="div2_display">display</label><br />
+          <input type="radio" name="div2_display" id="div2_display" value="none" checked />none
+          <input type="radio" name="div2_display" id="div2_display" value="block" />block <br />
+
+          <label for="div2_margin">margin</label> <br />
+          <select name="div2_margin" id="div2_margin">
+            <option value="24px">24px</option>
+            <option value="4em">4em</option>
+            <option value="0">0</option>
+            <option value="6vh 4vw">6vh 4vw</option>
+            <option value="12px 24px 48px 96px">12px 24px 48px 96px</option>
+            <option value="12px 24px 48px">12px 24px 48px</option>
+          </select>
+        </div>
+
+        <div>
+          <h4>p 요소</h4>
+          <label for="p_margin">margin</label> <br />
+          <input type="radio" name="p_margin" id="p_margin" value="1em 0" checked />1em 0 <input type="radio" name="p_margin" id="p_margin" value="0"/>0
+        </div>
+      </div>
+    </section>
+
+    <script src="02_06.js"></script>
+  </body>
 </html>
